@@ -1,2 +1,4 @@
 [build]
-    functions = "functions"
+  command = ""          # Leave empty if no build step
+  functions = "functions"  # Directory for serverless functions
+  publish = ""          # Leave empty if you don’t have static assets
