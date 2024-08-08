@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "netlify deploy --prod"
   },
   "keywords": [],
   "author": "",
@@ -11,6 +12,9 @@
   "description": "",
   "dependencies": {
     "axios": "^1.7.3",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "netlify-cli": "^17.33.6",
+    "netlify-lambda": "^2.0.16",
+    "serverless-http": "^3.2.0"
   }
 }
