@@ -1,11 +1,8 @@
-const express = require("express");
-const serverless = require("serverless-http");
-const app = express();
-const router = express.Router();
-
-router.get("/", (req, res) => {
-    res.send("App is running..");
-});
-
-app.use("/.netlify/functions/app", router);
-module.exports.handler = serverless(app);
+// functions/quote.js
+exports.handler = async function(event, context) {
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ quote: "Example quote", author: "Anonymous" })
+    };
+  };
+  
